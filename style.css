@@ -1,0 +1,128 @@
+body{
+    background-color: black;
+    color: white;
+    height: 100vh;
+    margin: 0px;
+    display: flex;
+    font-family: sans-serif;
+}
+
+*{
+    /* border: 2px white solid; */
+    margin: 0px;
+}
+
+.left{
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.odintext{
+    position: absolute;
+    top: 25%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0, 0, 0, 50%);
+    width: 100%;
+    padding: 10px;
+}
+.odintext>h1{
+    font-size: 80px;
+}
+.odintext>img{
+    height: 100px;
+}
+#backgroundphoto{
+    width: 100vh;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* justify-content: space-between; */
+}
+
+.right>h1{
+    padding: 20px;
+}
+
+.backgroundtoright{
+    background-color: rgb(20, 20, 20);
+    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.formcontainer{
+    display: flex;
+}
+.formcontainer>div>div>label{
+    opacity: 80%;
+    font-size: 12px;
+}
+
+.inputbox{
+    display: flex;
+    flex-direction: column;
+    margin: 30px 30px 30px 0px;
+
+}
+.box{
+    width: 250px;
+    height: 25px;
+    border-radius: 5px;
+    border: 2px solid gray;
+    outline: none;
+}
+.box[type='number']::-webkit-inner-spin-button,
+.box[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.box:focus{
+    border-color: blue;
+}
+
+.passerror{
+    height: 10px;
+    padding-left: 5px;
+    color: red;
+    font-size: 12px;
+    opacity: 90%;
+}
+
+#email:invalid{
+    border-color: red;
+}
+
+button{
+    background-color: darkgreen;
+    color: white;
+    height: 50px;
+    width: 180px;
+    border-radius: 15px;
+    border-color: darkgreen;
+    font-weight: bolder;
+    font-size: large;
+}
+
+
+.lower{
+    padding: 20px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+a{
+    color: darkgreen;
+    text-decoration: none;
+}
